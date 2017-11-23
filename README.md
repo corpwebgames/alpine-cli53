@@ -9,11 +9,11 @@ Check healt AWS route53 host service with ROUTE_HOST:PORT add current aws ec2 cu
 ## Build
 
 ```bash
-docker build -t cli53 .
+docker build -t aipine-cli53 .
 ```
 
 ## Run
 
 ```bash
-docker run -ti -e ROUTE_HOST={route53 host} -e PORT={service port} webgames/cli53
+docker run -ti -e ROUTE_HOST={route53 host} -e PORT={service port} webgames/alpine-cli53
 ```
