@@ -1,7 +1,7 @@
-FROM alpine:3.3
+FROM alpine:3.6
 ENV GOPATH /go
 ENV GO15VENDOREXPERIMENT 1
-RUN apk add --no-cache curl git go make ;\
+RUN apk add --no-cache build-base curl git go make ;\
     go get github.com/barnybug/cli53 ;\
     cd $GOPATH/src/github.com/barnybug/cli53 ;\
     make install ;\
